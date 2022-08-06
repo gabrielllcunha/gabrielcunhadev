@@ -6,7 +6,7 @@
   <img alt="print" src=".github/print.png" width="100%">
 </p>
 
-## 🚀 Techs
+## ⚡ Techs
 
 This project was made using the following technologies:
 
