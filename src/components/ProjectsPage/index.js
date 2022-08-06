@@ -96,7 +96,7 @@ export function ProjectsPage() {
             <p>Made with NextJS and Sass</p>
           </div>
           <Link
-            href="https://gcswebsite.vercel.app/"
+            href="https://gabrielcunhadev.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
