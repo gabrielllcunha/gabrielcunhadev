@@ -111,7 +111,7 @@ export function ProjectsPage() {
 
           <div className={styles.linksContainer}>
             <Link
-              href="mailto:gabrielcunhasantos01@gmail.com?subject=/job/gcswebsite"
+              href="mailto:gabrielcunhasantos01@gmail.com?subject=/jobs"
               target="_blank"
               rel="noreferrer"
             >

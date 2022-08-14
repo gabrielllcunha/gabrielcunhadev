@@ -69,7 +69,7 @@ export function HomePage() {
                 </a>
 
                 <a
-                  href="mailto:gabrielcunhasantos01@gmail.com?subject=/job/gcswebsite"
+                  href="mailto:gabrielcunhasantos01@gmail.com?subject=/jobs"
                   target="_blank"
                   rel="noreferrer"
                 >
