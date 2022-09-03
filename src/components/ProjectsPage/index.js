@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
+import SetembroAmareloWebsite from "./../../../public/images/website2.png";
 import AlanGomesWebsite from "./../../../public/images/website1.png";
 import PersonalWebsite from "./../../../public/images/website0.png";
 
@@ -29,6 +30,41 @@ export function ProjectsPage() {
         <p data-aos="fade-up" data-aos-delay="400" className={styles.desc}>
           Here's some of my web projects made using the latests technologies.
         </p>
+
+        <Image
+          src={SetembroAmareloWebsite}
+          alt="Setembro Amarelo Websie"
+          width={1089}
+          height={710}
+          unoptimized={true}
+          objectFit="contain"
+          style={{ paddingTop: "40px !important" }}
+          data-aos="fade-up"
+          data-aos-delay="500"
+        />
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className={styles.containerDesc}
+        >
+          <h3>Setembro Amarelo Websie</h3>
+          <div className={styles.checkIcon}>
+            <AiOutlineCheck />
+            <p>Informational Website</p>
+          </div>
+          <div className={styles.checkIcon}>
+            <AiOutlineCheck />
+            <p>Made with HTML, CSS and JS</p>
+          </div>
+          <Link
+            href="https://setembro-amarelo-website.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <a className={styles.btn}>Have a Peek 👀</a>
+          </Link>
+        </div>
 
         <Image
           src={AlanGomesWebsite}
