@@ -32,41 +32,6 @@ export function ProjectsPage() {
         </p>
 
         <Image
-          src={SetembroAmareloWebsite}
-          alt="Setembro Amarelo Websie"
-          width={1089}
-          height={710}
-          unoptimized={true}
-          objectFit="contain"
-          style={{ paddingTop: "40px !important" }}
-          data-aos="fade-up"
-          data-aos-delay="500"
-        />
-
-        <div
-          data-aos="fade-up"
-          data-aos-delay="200"
-          className={styles.containerDesc}
-        >
-          <h3>Setembro Amarelo Websie</h3>
-          <div className={styles.checkIcon}>
-            <AiOutlineCheck />
-            <p>Informational Website</p>
-          </div>
-          <div className={styles.checkIcon}>
-            <AiOutlineCheck />
-            <p>Made with HTML, CSS and JS</p>
-          </div>
-          <Link
-            href="https://setembro-amarelo-website.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <a className={styles.btn}>Have a Peek 👀</a>
-          </Link>
-        </div>
-
-        <Image
           src={AlanGomesWebsite}
           alt="Alan Gomes Website"
           width={1089}
@@ -77,13 +42,12 @@ export function ProjectsPage() {
           data-aos="fade-up"
           data-aos-delay="500"
         />
-
         <div
           data-aos="fade-up"
           data-aos-delay="200"
           className={styles.containerDesc}
         >
-          <h3>Alan Gomes Website</h3>
+          <h3>Alan Gomes</h3>
           <div className={styles.checkIcon}>
             <AiOutlineCheck />
             <p>Personal Portfolio</p>
@@ -106,6 +70,40 @@ export function ProjectsPage() {
         </div>
 
         <Image
+          src={SetembroAmareloWebsite}
+          alt="Setembro Amarelo Website"
+          width={1089}
+          height={710}
+          unoptimized={true}
+          objectFit="contain"
+          style={{ paddingTop: "40px !important" }}
+          data-aos="fade-up"
+          data-aos-delay="500"
+        />
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className={styles.containerDesc}
+        >
+          <h3>Setembro Amarelo</h3>
+          <div className={styles.checkIcon}>
+            <AiOutlineCheck />
+            <p>Informational Website</p>
+          </div>
+          <div className={styles.checkIcon}>
+            <AiOutlineCheck />
+            <p>Made with HTML, CSS and JS</p>
+          </div>
+          <Link
+            href="https://setembro-amarelo-website.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <a className={styles.btn}>Have a Peek 👀</a>
+          </Link>
+        </div>
+
+        <Image
           src={PersonalWebsite}
           alt="Personal Website"
           width={1089}
@@ -116,7 +114,6 @@ export function ProjectsPage() {
           data-aos="fade-up"
           data-aos-delay="500"
         />
-
         <div
           data-aos="fade-up"
           data-aos-delay="200"
