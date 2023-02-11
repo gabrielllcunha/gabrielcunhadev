@@ -58,7 +58,7 @@ export function ProjectsPage() {
           </div>
           <div className={styles.checkIcon}>
             <AiOutlineCheck />
-            <p>Made with HTML, CSS and JS</p>
+            <p>Made with Bootstrap, jQuery, HTML, CSS and JS</p>
           </div>
           <Link
             href="https://acgportfolio.vercel.app/"
@@ -92,7 +92,7 @@ export function ProjectsPage() {
           </div>
           <div className={styles.checkIcon}>
             <AiOutlineCheck />
-            <p>Made with HTML, CSS and JS</p>
+            <p>Made with Bootstrap, HTML, CSS and JS</p>
           </div>
           <Link
             href="https://setembro-amarelo-website.vercel.app/"
