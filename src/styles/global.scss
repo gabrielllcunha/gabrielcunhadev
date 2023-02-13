@@ -4,6 +4,28 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow: overlay !important;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background-color: #2d2d2d;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #5e5e5e;
+}
+
+::selection {
+  background-color: #0F3772;
+}
+
 :root {
   --bg: #0A0A0A;
   --font-color: #F0F0F0;
