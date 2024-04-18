@@ -61,7 +61,7 @@ export function ProjectsPage() {
             <p>Made with Bootstrap, jQuery, HTML, CSS and JS</p>
           </div>
           <Link
-            href="https://acgportfolio.vercel.app/"
+            href="https://alancarlosarq.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
@@ -119,7 +119,7 @@ export function ProjectsPage() {
           data-aos-delay="200"
           className={styles.containerDesc}
         >
-          <h3>My Website <small style={{fontSize: 12, color: 'gray'}}>(you're in it)</small></h3>
+          <h3>My Website <small style={{ fontSize: 12, color: 'gray' }}>(you're in it)</small></h3>
           <div className={styles.checkIcon}>
             <AiOutlineCheck />
             <p>Personal Portfolio</p>
