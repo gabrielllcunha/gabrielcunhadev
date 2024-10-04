@@ -31,128 +31,39 @@ export function ProjectsPage() {
           Here's some of my web projects made using the latests technologies.
         </p>
 
-        <Image
-          src={AlanGomesWebsite}
+        <ProjectItem
+          title="Alan Gomes"
+          imageSrc={AlanGomesWebsite}
           alt="Alan Gomes Website"
-          width={1089}
-          height={710}
-          unoptimized={true}
-          objectFit="contain"
-          style={{ paddingTop: "40px !important" }}
-          data-aos="fade-up"
-          data-aos-delay="500"
+          info={[
+            "Personal Portfolio",
+            "Contact Form",
+            "Made with Bootstrap, jQuery, HTML, CSS, and JS",
+          ]}
+          projectLink="https://alancarlosarq.vercel.app/"
         />
-        <div
-          data-aos="fade-up"
-          data-aos-delay="200"
-          className={styles.containerDesc}
-        >
-          <h3>Alan Gomes</h3>
-          <div className={styles.checkIcon}>
-            <AiOutlineCheck />
-            <p>Personal Portfolio</p>
-          </div>
-          <div className={styles.checkIcon}>
-            <AiOutlineCheck />
-            <p>Contact Form</p>
-          </div>
-          <div className={styles.checkIcon}>
-            <AiOutlineCheck />
-            <p>Made with Bootstrap, jQuery, HTML, CSS and JS</p>
-          </div>
-          <Link
-            href="https://alancarlosarq.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <a className={styles.btn}>Have a Peek 👀</a>
-          </Link>
-        </div>
-
-        <Image
-          src={SetembroAmareloWebsite}
+        <ProjectItem
+          title="Setembro Amarelo"
+          imageSrc={SetembroAmareloWebsite}
           alt="Setembro Amarelo Website"
-          width={1089}
-          height={710}
-          unoptimized={true}
-          objectFit="contain"
-          style={{ paddingTop: "40px !important" }}
-          data-aos="fade-up"
-          data-aos-delay="500"
+          info={[
+            "Informational Website",
+            "Made with Bootstrap, HTML, CSS, and JS",
+          ]}
+          projectLink="https://setembro-amarelo-website.vercel.app/"
         />
-        <div
-          data-aos="fade-up"
-          data-aos-delay="200"
-          className={styles.containerDesc}
-        >
-          <h3>Setembro Amarelo</h3>
-          <div className={styles.checkIcon}>
-            <AiOutlineCheck />
-            <p>Informational Website</p>
-          </div>
-          <div className={styles.checkIcon}>
-            <AiOutlineCheck />
-            <p>Made with Bootstrap, HTML, CSS and JS</p>
-          </div>
-          <Link
-            href="https://setembro-amarelo-website.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <a className={styles.btn}>Have a Peek 👀</a>
-          </Link>
-        </div>
-
-        <Image
-          src={PersonalWebsite}
+        <ProjectItem
+          title="My Website"
+          imageSrc={PersonalWebsite}
           alt="Personal Website"
-          width={1089}
-          height={710}
-          unoptimized={true}
-          objectFit="contain"
-          style={{ paddingTop: "40px !important" }}
-          data-aos="fade-up"
-          data-aos-delay="500"
+          info={[
+            "Personal Portfolio",
+            "Made with NextJS and Sass",
+          ]}
+          projectLink="https://gabrielcunhadev.vercel.app/"
         />
-        <div
-          data-aos="fade-up"
-          data-aos-delay="200"
-          className={styles.containerDesc}
-        >
-          <h3>My Website <small style={{ fontSize: 12, color: 'gray' }}>(you're in it)</small></h3>
-          <div className={styles.checkIcon}>
-            <AiOutlineCheck />
-            <p>Personal Portfolio</p>
-          </div>
-          <div className={styles.checkIcon}>
-            <AiOutlineCheck />
-            <p>Made with NextJS and Sass</p>
-          </div>
-          <Link
-            href="https://gabrielcunhadev.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <a className={styles.btn}>Have a Peek 👀</a>
-          </Link>
-        </div>
       </div>
-
-      <footer className={styles.footer}>
-        <div className="container">
-          <h2 className={styles.titleFooter}>Get in Touch! 📩</h2>
-
-          <div className={styles.linksContainer}>
-            <Link
-              href="mailto:gabrielcunhasantos01@gmail.com?subject=/jobs"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <a className={styles.btn}>Send Email</a>
-            </Link>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
