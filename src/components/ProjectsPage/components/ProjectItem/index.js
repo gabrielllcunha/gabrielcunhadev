@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineCheck } from "react-icons/ai";
-import styles from "../styles.module.scss";
+import styles from "../../styles.module.scss";
 
 export function ProjectItem({ title, imageSrc, alt, info, projectLink }) {
     return (
