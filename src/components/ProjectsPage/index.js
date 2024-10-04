@@ -1,10 +1,12 @@
+import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./styles.module.scss";
 import { AiOutlineCheck, AiOutlineLeft } from "react-icons/ai";
+import { ProjectItem } from "./components/ProjectItem";
+import { Footer } from "./components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 import SetembroAmareloWebsite from "./../../../public/images/website2.png";
 import AlanGomesWebsite from "./../../../public/images/website1.png";
