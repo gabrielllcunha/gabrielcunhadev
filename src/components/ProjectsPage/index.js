@@ -30,7 +30,7 @@ export function ProjectsPage() {
           Portfolio
         </h1>
         <p data-aos="fade-up" data-aos-delay="400" className={styles.desc}>
-          Here's some of my web projects made using the latests technologies.
+          Here are some of my web projects made using the latest technologies.
         </p>
 
         <ProjectItem
