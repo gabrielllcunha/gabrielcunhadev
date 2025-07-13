@@ -2,8 +2,9 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 export default class MyDocument extends Document {
   render() {
+    const currentLocale = this.props.__NEXT_DATA__.locale || 'en';
     return (
-      <Html>
+      <Html lang={currentLocale}>
         <Head>
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />

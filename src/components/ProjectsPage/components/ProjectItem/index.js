@@ -2,8 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineCheck } from "react-icons/ai";
 import styles from "../../styles.module.scss";
+import { useTranslation } from "react-i18next";
 
 export function ProjectItem({ title, imageSrc, alt, info, projectLink }) {
+    const { t } = useTranslation('pages');
+
     return (
         <>
             <Image
@@ -30,7 +33,7 @@ export function ProjectItem({ title, imageSrc, alt, info, projectLink }) {
                     </div>
                 ))}
                 <Link href={projectLink} target="_blank" rel="noreferrer">
-                    <a className={styles.btn}>Have a Peek 👀</a>
+                    <a className={styles.btn}>{t('projectsPage.have_a_peek')} 👀</a>
                 </Link>
             </div>
         </>

@@ -12,14 +12,26 @@ import {
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { LanguageSwitcher } from '../LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
 
 export function HomePage() {
+  const { t, i18n } = useTranslation('pages');
+
+  useEffect(() => {
+    const savedLang = typeof window !== 'undefined' && localStorage.getItem('lang');
+    if (savedLang && savedLang !== i18n.language) {
+      i18n.changeLanguage(savedLang);
+    }
+  }, [i18n]);
+
   useEffect(() => {
     AOS.init();
   });
 
   return (
     <>
+      <LanguageSwitcher />
       <div className={styles.cardSolo}>
         <div className={styles.gradient}>
           <div className={styles.gradientPart1}></div>
@@ -48,7 +60,7 @@ export function HomePage() {
               <h4 className={styles.subtitle}>Front-End Developer & UI/UX Designer</h4>
 
               <Link href="/projects">
-                <a className={styles.btn}>My Projects</a>
+                <a className={styles.btn}>{t('homePage.ctaButton')}</a>
               </Link>
 
               <div className={styles.icons}>

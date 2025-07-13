@@ -7,19 +7,30 @@ import { ProjectItem } from "./components/ProjectItem";
 import { Footer } from "./components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useTranslation } from 'react-i18next';
+import { LanguageSwitcher } from '../LanguageSwitcher';
+import { useRouter } from 'next/router';
 
 import SetembroAmareloWebsite from "./../../../public/images/website2.png";
 import AlanGomesWebsite from "./../../../public/images/website1.png";
 import PersonalWebsite from "./../../../public/images/website0.png";
 
 export function ProjectsPage() {
+  const { t, i18n } = useTranslation('pages');
+  const router = useRouter();
+
   useEffect(() => {
     AOS.init();
-  });
+    const savedLang = typeof window !== 'undefined' && localStorage.getItem('lang');
+    if (savedLang && savedLang !== i18n.language) {
+      i18n.changeLanguage(savedLang);
+    }
+  }, [i18n]);
 
   return (
     <>
       <div className={styles.container}>
+        <LanguageSwitcher />
         <Link href="/">
           <a data-aos="fade-up" data-aos-delay="200" className={styles.btn}>
             <AiOutlineLeft size={18} />
@@ -27,40 +38,40 @@ export function ProjectsPage() {
         </Link>
 
         <h1 data-aos="fade-up" data-aos-delay="300" className={styles.title}>
-          Portfolio
+          {t('projectsPage.portfolio')}
         </h1>
         <p data-aos="fade-up" data-aos-delay="400" className={styles.desc}>
-          Here are some of my web projects made using the latest technologies.
+          {t('projectsPage.projects_desc')}
         </p>
 
         <ProjectItem
-          title="Alan Gomes"
+          title={t('projectsPage.alan_gomes')}
           imageSrc={AlanGomesWebsite}
           alt="Alan Gomes Website"
           info={[
-            "Personal Portfolio",
-            "Contact Form",
-            "Made with Bootstrap, jQuery, HTML, CSS, and JS",
+            t('projectsPage.alan_gomes_info_1'),
+            t('projectsPage.alan_gomes_info_2'),
+            t('projectsPage.alan_gomes_info_3'),
           ]}
           projectLink="https://alancarlosarq.vercel.app/"
         />
         <ProjectItem
-          title="Setembro Amarelo"
+          title={t('projectsPage.setembro_amarelo')}
           imageSrc={SetembroAmareloWebsite}
           alt="Setembro Amarelo Website"
           info={[
-            "Informational Website",
-            "Made with Bootstrap, HTML, CSS, and JS",
+            t('projectsPage.setembro_amarelo_info_1'),
+            t('projectsPage.setembro_amarelo_info_2'),
           ]}
           projectLink="https://setembro-amarelo-website.vercel.app/"
         />
         <ProjectItem
-          title="My Website"
+          title={t('projectsPage.my_website')}
           imageSrc={PersonalWebsite}
           alt="Personal Website"
           info={[
-            "Personal Portfolio",
-            "Made with NextJS and Sass",
+            t('projectsPage.my_website_info_1'),
+            t('projectsPage.my_website_info_2'),
           ]}
           projectLink="https://gabrielcunhadev.vercel.app/"
         />

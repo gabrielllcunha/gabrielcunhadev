@@ -12,3 +12,4 @@ This project was made using the following technologies:
 
 - NextJs
 - Sass
+- i18n
