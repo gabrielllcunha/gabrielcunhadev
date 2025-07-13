@@ -13,15 +13,11 @@ i18n
       en: { pages: enTranslationKeys.pages },
       pt: { pages: ptTranslationKeys.pages },
     },
+    lng: 'en',
     fallbackLng: 'en',
     ns: ['pages'],
     defaultNS: 'pages',
     keySeparator: '.',
-    detection: {
-      order: ['localStorage', 'navigator'],
-      caches: ['localStorage'],
-      lookupLocalStorage: 'lang',
-    },
     react: {
       useSuspense: true,
     },
