@@ -66,9 +66,14 @@ export function ProjectsPage() {
           projectLink="https://setembro-amarelo-website.vercel.app/"
         />
         <ProjectItem
-          title={t('projectsPage.my_website')}
+          title={
+            <>
+              {t('projectsPage.my_website')}{' '}
+              <small style={{ fontSize: 12, color: 'gray' }}>{t('projectsPage.my_website_subtitle')}</small>
+            </>
+          }
           imageSrc={PersonalWebsite}
-          alt="Personal Website"
+          alt="My Website"
           info={[
             t('projectsPage.my_website_info_1'),
             t('projectsPage.my_website_info_2'),
