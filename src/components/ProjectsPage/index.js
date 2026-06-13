@@ -12,7 +12,7 @@ import { LanguageSwitcher } from '../LanguageSwitcher';
 import { useRouter } from 'next/router';
 
 import SetembroAmareloWebsite from "./../../../public/images/website2.png";
-import AlanGomesWebsite from "./../../../public/images/website1.png";
+import AlcarisWebsite from "./../../../public/images/website1.png";
 import PersonalWebsite from "./../../../public/images/website0.png";
 
 export function ProjectsPage() {
@@ -45,15 +45,15 @@ export function ProjectsPage() {
         </p>
 
         <ProjectItem
-          title={t('projectsPage.alan_gomes')}
-          imageSrc={AlanGomesWebsite}
-          alt="Alan Gomes Website"
+          title={t('projectsPage.alcaris')}
+          imageSrc={AlcarisWebsite}
+          alt="ALCARIS Arquitetura"
           info={[
-            t('projectsPage.alan_gomes_info_1'),
-            t('projectsPage.alan_gomes_info_2'),
-            t('projectsPage.alan_gomes_info_3'),
+            t('projectsPage.alcaris_info_1'),
+            t('projectsPage.alcaris_info_2'),
+            t('projectsPage.alcaris_info_3'),
           ]}
-          projectLink="https://alancarlosarq.vercel.app/"
+          projectLink="https://alcaris-arquitetura.vercel.app/"
         />
         <ProjectItem
           title={t('projectsPage.setembro_amarelo')}
