@@ -53,7 +53,7 @@ export function ProjectsPage() {
             t('projectsPage.alcaris_info_2'),
             t('projectsPage.alcaris_info_3'),
           ]}
-          projectLink="https://alcaris-arquitetura.vercel.app/"
+          projectLink="https://alcarisarquitetura.vercel.app/"
         />
         <ProjectItem
           title={t('projectsPage.setembro_amarelo')}
