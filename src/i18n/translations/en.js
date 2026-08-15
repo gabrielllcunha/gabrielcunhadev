@@ -9,7 +9,7 @@ module.exports = {
         projects_desc: 'Here are some of my web projects made using the latest technologies.',
         alcaris: 'ALCARIS Arquitetura',
         alcaris_info_1: 'Commercial website',
-        alcaris_info_2: 'Project Portfolio Showcase',
+        alcaris_info_2: 'Projects Showcase',
         alcaris_info_3: 'Made with React, i18next, and CSS',
         setembro_amarelo: 'Setembro Amarelo',
         setembro_amarelo_info_1: 'Informational website',

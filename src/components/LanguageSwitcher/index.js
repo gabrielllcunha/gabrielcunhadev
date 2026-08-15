@@ -36,27 +36,31 @@ export function LanguageSwitcher() {
   if (!isClient) {
     return (
       <div className={styles.container}>
-        <button className={`${styles.button} ${styles.inactive}`}>EN</button>
+        <button type="button" tabIndex={-1} disabled className={`${styles.button} ${styles.inactive}`}>EN</button>
         <span className={styles.separator}>/</span>
-        <button className={`${styles.button} ${styles.inactive}`}>PT</button>
+        <button type="button" tabIndex={-1} disabled className={`${styles.button} ${styles.inactive}`}>PT</button>
       </div>
     );
   }
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} role="group" aria-label="Language">
       <button
+        type="button"
         onClick={() => handleLangSwitch('en')}
         className={`${styles.button} ${current === 'en' ? styles.active : styles.inactive}`}
         aria-label="Switch to English"
+        aria-pressed={current === 'en'}
       >
         EN
       </button>
-      <span className={styles.separator}>/</span>
+      <span className={styles.separator} aria-hidden="true">/</span>
       <button
+        type="button"
         onClick={() => handleLangSwitch('pt')}
         className={`${styles.button} ${current === 'pt' ? styles.active : styles.inactive}`}
         aria-label="Switch to Portuguese"
+        aria-pressed={current === 'pt'}
       >
         PT
       </button>
