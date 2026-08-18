@@ -61,15 +61,15 @@ export function ProjectsPage() {
           imageSrc={ArchiveOfOurSongsWebsite}
           alt="Archive of Our Songs"
           info={[
+            t('projectsPage.archive_of_our_songs_info_1'),
             <Trans
-              key="archive_of_our_songs_info_1"
-              i18nKey="projectsPage.archive_of_our_songs_info_1"
+              key="archive_of_our_songs_info_2"
+              i18nKey="projectsPage.archive_of_our_songs_info_2"
               ns="pages"
               components={{
                 lastfm: <a href="http://last.fm/" target="_blank" rel="noopener noreferrer" className={styles.inlineLink} />,
               }}
             />,
-            t('projectsPage.archive_of_our_songs_info_2'),
             t('projectsPage.archive_of_our_songs_info_3'),
           ]}
           projectLink="https://archiveofoursongs.vercel.app/"
