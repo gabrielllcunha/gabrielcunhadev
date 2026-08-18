@@ -1,13 +1,11 @@
-import '../styles/global.scss'
+import '../styles/global.scss';
 import { I18nextProvider } from 'react-i18next';
-const i18n = require('../i18n/i18n.js');
+import i18n from '../i18n/i18n';
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
   return (
     <I18nextProvider i18n={i18n}>
       <Component {...pageProps} />
     </I18nextProvider>
   );
 }
-
-module.exports = MyApp;
