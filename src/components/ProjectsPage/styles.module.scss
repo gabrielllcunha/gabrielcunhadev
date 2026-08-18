@@ -51,6 +51,15 @@
   }
 }
 
+.inlineLink {
+  color: #5B9BFF;
+  text-decoration: none;
+
+  &:hover {
+    color: #8BB4FF;
+  }
+}
+
 .checkIcon {
   display: flex;
   align-items: center;

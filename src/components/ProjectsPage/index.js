@@ -7,13 +7,14 @@ import { ProjectItem } from "./components/ProjectItem";
 import { Footer } from "./components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from '../LanguageSwitcher';
 import { useRouter } from 'next/router';
 
-import SetembroAmareloWebsite from "./../../../public/images/website2.png";
-import AlcarisWebsite from "./../../../public/images/website1.png";
 import PersonalWebsite from "./../../../public/images/website0.png";
+import SetembroAmareloWebsite from "./../../../public/images/website1.png";
+import ArchiveOfOurSongsWebsite from "./../../../public/images/website2.png";
+import AlcarisWebsite from "./../../../public/images/website3.png";
 
 export function ProjectsPage() {
   const { t, i18n } = useTranslation('pages');
@@ -54,6 +55,24 @@ export function ProjectsPage() {
             t('projectsPage.alcaris_info_3'),
           ]}
           projectLink="https://alcarisarquitetura.vercel.app/"
+        />
+        <ProjectItem
+          title={t('projectsPage.archive_of_our_songs')}
+          imageSrc={ArchiveOfOurSongsWebsite}
+          alt="Archive of Our Songs"
+          info={[
+            <Trans
+              key="archive_of_our_songs_info_1"
+              i18nKey="projectsPage.archive_of_our_songs_info_1"
+              ns="pages"
+              components={{
+                lastfm: <a href="http://last.fm/" target="_blank" rel="noopener noreferrer" className={styles.inlineLink} />,
+              }}
+            />,
+            t('projectsPage.archive_of_our_songs_info_2'),
+            t('projectsPage.archive_of_our_songs_info_3'),
+          ]}
+          projectLink="https://archiveofoursongs.vercel.app/"
         />
         <ProjectItem
           title={t('projectsPage.setembro_amarelo')}

@@ -18,11 +18,13 @@ export function ProjectItem({ title, imageSrc, alt, info, projectLink }) {
                 objectFit="contain"
                 style={{ paddingTop: "40px !important" }}
                 data-aos="fade-up"
-                data-aos-delay="500"
+                data-aos-delay="200"
+                data-aos-duration="300"
             />
             <div
                 data-aos="fade-up"
-                data-aos-delay="200"
+                data-aos-delay="80"
+                data-aos-duration="300"
                 className={styles.containerDesc}
             >
                 <h3>{title}</h3>
